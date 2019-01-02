@@ -22,7 +22,7 @@ public class Main {
             b.channel(NioServerSocketChannel.class);
             b.childHandler(new MyWebSocketChannelHandler());// 调用自己封装的处理类
             System.out.println("服务端开启等待客户端连接...");
-            Channel ch = b.bind(8888).sync().channel();
+            Channel ch = b.bind(9998).sync().channel();
             ch.closeFuture().sync();
 
         }catch (Exception e){

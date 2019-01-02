@@ -24,7 +24,7 @@ import java.util.Date;
 public class MyWebSocketHandler extends SimpleChannelInboundHandler<Object>{
 
     private WebSocketServerHandshaker handshaker;
-    private static final String WEB_SOCKET_URL = "ws//localhost:8888/websocket";
+    private static final String WEB_SOCKET_URL = "ws//localhost:9998/echo";
 
     /**
      * 客户端与服务端创建连接时调用
